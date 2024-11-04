@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDpF11akewFCZYN1f5Lue-UqDeIFaVjxOw",
-  authDomain: "easyportfolio-d201f.firebaseapp.com",
-  projectId: "easyportfolio-d201f",
-  storageBucket: "easyportfolio-d201f.firebasestorage.app",
-  messagingSenderId: "956220553872",
-  appId: "1:956220553872:web:08045ebc23f782831ff615",
-  measurementId: "G-PHLD3KTN87"
+  apiKey: process.env.NEXT_PUBLIC_APIKEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECTID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
+  messagingSenderId:  process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
+  appId: process.env.NEXT_PUBLIC_APPID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMNTID
 };
 
 // Initialize Firebase
