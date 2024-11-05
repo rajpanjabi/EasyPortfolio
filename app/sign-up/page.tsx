@@ -28,10 +28,14 @@ const SignUp = () => {
   return(<div className="signup-container">
             <h2 className="signup-title">Sign Up</h2>
             <form onSubmit={handleSubmit} className="signup-form">
+              <div className='fields'> 
                 <label>Username</label>
                 <input type="email" id="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Enter your username" required></input>
+                </div>
+                <div className='fields'>
                 <label>Password</label>
                 <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" required  />
+                </div>
                 <button type="submit" className="signup-button">Sign Up</button>
             </form>
         </div>

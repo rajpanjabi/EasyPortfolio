@@ -1,52 +1,17 @@
-// Basic reset for header and nav styling
-.header {
-    background-color: #0070f3;
-    color: #fff;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  
-      .nav-logo a {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #fff;
-        text-decoration: none;
-      }
-  
-      .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 1.5rem;
-  
-        li a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 1rem;
-          transition: color 0.3s;
-  
-          &:hover {
-            color: #cce7ff;
-          }
-        }
-      }
-  
-      .nav-auth .nav-button {
-        padding: 0.5rem 1rem;
-        background-color: #fff;
-        color: #0070f3;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s, color 0.3s;
-  
-        &:hover {
-          background-color: #cce7ff;
-          color: #005bb5;
-        }
-      }
-    }
-  }
+
+/* Navbar (Header) Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 55px;
+  background-color: rgb(53, 55, 64);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}

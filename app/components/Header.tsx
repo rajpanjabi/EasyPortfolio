@@ -3,38 +3,20 @@ import Link from 'next/link'; // Use Link from Next.js for client-side navigatio
 import '../styles/Header.scss';
 
 const Header = () => {
+  
   return (
-    <header className="header">
-      <nav className="nav">
-        <div className="nav-logo">
-          <Link href="/">
-            {/* <a>MyApp</a> */}
-          </Link>
-        </div>
-        <ul className="nav-links">
-          <li>
-            <Link href="/about">
-             
-            </Link>
-          </li>
-          <li>
-            <Link href="/services">
-              
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              
-            </Link>
-          </li>
-        </ul>
-        <div className="nav-auth">
-          <Link href="/signup">
-            {/* <a className="nav-button">Sign Up</a> */}
-          </Link>
-        </div>
-      </nav>
-    </header>
+   
+        <header className="navbar">
+            <div className="logo">EasyPortfolio</div>
+            <nav className="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#docs">Docs</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+        </header>
+
   );
 };
 
